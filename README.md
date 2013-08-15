@@ -1,4 +1,4 @@
-SpringXmlConfigExample
+SpringXmlConfigExample with Servlet 2.4 and JSTL 1.1.2
 ======================
 
 A Simple Spring MVC application with XML configuration and a complete test suite
