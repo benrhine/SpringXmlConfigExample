@@ -25,7 +25,7 @@ mvn tomcat6:run, mvn tomcat7:run or mvn jetty:run.
 
 Tested Compilers:
 -----------------
-Maven 3.0.5
+Maven 3.0.5                                                                                                             
 Maven 3.1.0
 
 Builds and runs tests with either version without issue.
