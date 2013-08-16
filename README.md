@@ -1,16 +1,16 @@
 SpringXmlConfigExample:
 ======================
-(with Servlet 2.4 and JSTL 1.1.2)
----------------------
+###(with Servlet 2.4 and JSTL 1.1.2)
+
 
 A Simple Spring MVC application with XML configuration and a complete test suite
 
 For me this is more of a memory aide as well as a learning tool.  I wanted to have a fully tested, template web application to jump start any future projects for work as well as being able to easily reference things that I have learned or just want to remember.  This will be the first template program in a series I am working on in my free time, I hope to soon have four of these examples.
 
-*Spring MVC with XML Config
-*Spring MVC with Java Config
-*Spring MVC with Groovy on Grails    
-*Spring MVC with Scala
+* Spring MVC with XML Config
+* Spring MVC with Java Config
+* Spring MVC with Groovy on Grails    
+* Spring MVC with Scala
 
 Spring MVC with XML Config
 =======================
@@ -22,24 +22,24 @@ I have done my best to completely write tests around my template to ensure that 
 
 ####Tested Java Versions:
 
-*Java 1.6.0_45
-*Java 1.7.0_21
+* Java 1.6.0_45
+* Java 1.7.0_21
 
 No issues with either of the versions I tried at least none that I noticed
 
 ####Tested Containers:
 
-*Tomcat 5.5.28 
-*Tomcat 6.0.36  
-*Tomcat 7.0.37   
-*Jetty  8.1.12.v20130726                                                                                               
+* Tomcat 5.5.28 
+* Tomcat 6.0.36  
+* Tomcat 7.0.37   
+* Jetty  8.1.12.v20130726                                                                                               
 
 The later three are all runable from the maven plugin and have been configured with a JNDI datasource. Use the commands
 mvn tomcat6:run, mvn tomcat7:run or mvn jetty:run.
 
 ####Tested Compilers:
 
-*Maven 3.0.5    
-*Maven 3.1.0
+* Maven 3.0.5    
+* Maven 3.1.0
 
 Builds and runs tests with either version without issue.
