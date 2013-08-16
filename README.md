@@ -3,7 +3,7 @@ SpringXmlConfigExample:
 ###(with Servlet 2.4 and JSTL 1.1.2)
 
 
-A Simple Spring MVC application with XML configuration and a complete test suite
+A Simple Spring MVC application with XML configuration and a complete test suite.
 
 For me this is more of a memory aide as well as a learning tool.  I wanted to have a fully tested, template web application to jump start any future projects for work as well as being able to easily reference things that I have learned or just want to remember.  This will be the first template program in a series I am working on in my free time, I hope to soon have four of these examples.
 
@@ -15,6 +15,32 @@ For me this is more of a memory aide as well as a learning tool.  I wanted to ha
 Spring MVC with XML Config
 =======================
 For the xml based config I have the servlet configured as 2.4 as servlet 2.4 is the highest version that will still run on a Tomcat 5.5 container as well as JSTL 1.1.2 (I will be updating these in another example). At the time of writing this, cobertura shows by test coverage to be around 94% of all lines of code.
+
+Setup
+==============
+To run this example you will need to setup a MySql database called test. Then you will need to change the username and password located in either the jetty.xml or context.xml.  After that you will need to run the Example-Create.sql file which is located under src/main/resources/sql-setup in order to setup the correct tables.
+
+Running the Example
+==============
+To actually execute the example use any of the following commands. 
+
+Run with Jetty 8
+```
+mvn jetty:run
+```
+Run with Tomcat 7
+```
+mvn tomcat7:run
+```
+Run with Tomcat 6
+```
+mvn tomcat6:run
+```
+
+If you want to build the example as a war and run all the tests then run the following.
+```
+mvn clean package
+```
 
 Testing
 ==============
@@ -34,9 +60,7 @@ No issues with either of the versions I tried at least none that I noticed
 * Tomcat 7.0.37   
 * Jetty  8.1.12.v20130726                                                                                               
 
-The later three are all runable from the maven plugin and have been configured with a JNDI datasource. Use the commands
-mvn tomcat6:run, mvn tomcat7:run or mvn jetty:run.
-
+The later three are all runable from the maven plugin and have been configured with a JNDI datasource.
 ####Tested Compilers:
 
 * Maven 3.0.5    
